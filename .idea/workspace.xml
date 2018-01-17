@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16d2bfc6-f711-46ff-aa62-a1681fb76f52" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OrderBook.jar" afterPath="$PROJECT_DIR$/OrderBook.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OrderBook/com/gs/OrderBook.class" afterPath="$PROJECT_DIR$/out/production/OrderBook/com/gs/OrderBook.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gs/OrderBook.java" afterPath="$PROJECT_DIR$/src/com/gs/OrderBook.java" />
     </list>
     <ignored path="OrderBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -542,6 +540,14 @@
       <option name="presentableId" value="Default" />
       <updated>1515694614589</updated>
     </task>
+    <task id="LOCAL-00001" summary="Removing Comments from delete">
+      <created>1516221026228</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1516221026228</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -606,6 +612,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Removing Comments from delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing Comments from delete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
