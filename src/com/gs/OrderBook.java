@@ -155,16 +155,6 @@ public class OrderBook {
                 it.remove();
             }
         }
-        /*for (int i =level+1; i < LEVELS; i++) {
-            Order o = levels.get(i);
-            if (o != null) {
-                int ordLevel = o.getLevelNo()-1;
-                o.setLevelNo(ordLevel);
-                levels.put(i-1, o);
-            }else {
-                levels.remove(i-1);
-            }
-        }*/
     }
 
     /**
