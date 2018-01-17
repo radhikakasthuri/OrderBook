@@ -103,10 +103,9 @@ public class OrderBook {
             current.setSize(order.getSize());
             current.setPrice(order.getPrice());
         }else {
-            insertOrder(levels, level, order);
+            levels.put(level, order);
         }
     }
-
     /**
      * Adds an order at the given level pushing existing other orders down
      * by one level

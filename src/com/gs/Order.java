@@ -21,7 +21,21 @@ public class Order {
         this.price = Double.parseDouble(updates[4]);
         this.size = Integer.parseInt(updates[5]);
     }
+    public Order(int levelNo, double price, int size, String side) {
+        this.levelNo = levelNo;
+        this.price = price;
+        this.side = side;
+        this.size = size;
+        this.action ="U";
+    }
 
+    public Order(String action, int levelNo, String side, double price, int size) {
+        this.levelNo = levelNo;
+        this.price = price;
+        this.side = side;
+        this.size = size;
+        this.action = action;
+    }
     public String getAction() {
         return action;
     }

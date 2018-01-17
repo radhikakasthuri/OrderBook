@@ -121,4 +121,12 @@ public class OrderProcessing {
             System.out.println("Error in OrderProcessing.generateOrderBookEntry" + ex);
         }
     }
+
+    public OrderBook getOrderBook() {
+        return orderBook;
+    }
+
+    public void setOrderBook(OrderBook orderBook) {
+        this.orderBook = orderBook;
+    }
 }
