@@ -76,9 +76,9 @@ public class OrderBook {
                     break;
                 case 'D':
                     if (side.equals("B")) {
-                        deleteOrder(bidLevels, level);
+                        deleteOrder(bidLevels, level, order);
                     } else {
-                        deleteOrder(askLevels, level);
+                        deleteOrder(askLevels, level, order);
                     }
                     break;
                 default:
@@ -135,9 +135,16 @@ public class OrderBook {
      * @param levels
      * @param level
      */
-    public void deleteOrder(Map<Integer, Order> levels, int level) {
+    public void deleteOrder(Map<Integer, Order> levels, int level, Order order) {
+        if (levels.containsKey(level)) {
+            String s1 = levels.get(level).toString();
+            String s2 = order.toString();
+            if (!s1.equals(s2)) {
+                System.out.println("Error in delete");
+            }
+        }
         levels.remove(level);
-        /*Iterator<Map.Entry<Integer, Order>> it = levels.entrySet().iterator();
+        Iterator<Map.Entry<Integer, Order>> it = levels.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry<Integer, Order> entry = it.next();
             if (entry.getKey() > level) {
@@ -147,8 +154,8 @@ public class OrderBook {
                 levels.put(levelNo, o);
                 it.remove();
             }
-        }*/
-        for (int i =level+1; i < LEVELS; i++) {
+        }
+        /*for (int i =level+1; i < LEVELS; i++) {
             Order o = levels.get(i);
             if (o != null) {
                 int ordLevel = o.getLevelNo()-1;
@@ -157,7 +164,7 @@ public class OrderBook {
             }else {
                 levels.remove(i-1);
             }
-        }
+        }*/
     }
 
     /**
